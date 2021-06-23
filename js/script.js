@@ -8,14 +8,18 @@ async function getWeatherData(e) {
 	const response = await fetch(url);
 	const data = await response.json();
 
-    console.log(data);
-
-	$("#precip").html(data.weather);
+    
+    //dot notation in an array
+    
+	$("#precip").html(data.weather[0].description);
 	$("#high").html(data.main.temp_min);
 	$("#low").html(data.main.temp_max);
     $("#sunrise").html(data.sys.sunrise);
     $("#sunset").html(data.sys.sunset);
-
+    // convert temps from kelvin, pull out into a varialble const temp = math 
+    // if country is US , F , else , C
+    
+    console.log(data);
 }
 
 $("form").on("submit", getWeatherData);
