@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather or Not</title>
+  </head>
+  <body>
+    <form>
+        <input type="text" placeholder="Location" />
+        <input type="submit" value="Get Weather" />
+      </form>
+    <h1>Forecast</h1>
+    <dl>
+      <dt>Rain or Shine?</dt>
+      <dd id="precip"></dd>
+      <dt>Temperature High</dt>
+      <dd id="high"></dd>
+      <dt>Temperature Low</dt>
+      <dd id="low"></dd>
+      <dt>Sunrise</dt>
+      <dd id="sunrise"></dd>
+      <dt>Sunset</dt>
+      <dd id="sunset"></dd>
+    </dl>
+  </body>
+</html>
